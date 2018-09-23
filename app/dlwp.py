@@ -26,7 +26,7 @@ def getLinks(data):
     # Iterate through posts to find their title and their link.
     for post in posts:
         # Save relavant data into variable
-        entry = {"title": post["data"]["title"], "url": post["data"]["url"]}
+        entry = {"title": post["data"]["id"], "url": post["data"]["url"]}
         # Populate our own list with skimmed information.
         links.append(entry)
     return links
